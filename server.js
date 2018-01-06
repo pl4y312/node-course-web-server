@@ -50,6 +50,13 @@ app.get('/about', (req, res) => {
   res.render('about', data)
 })
 
+app.get('/project', (req, res) => {
+  const data = {
+    title: 'Projects Page'
+  }
+  res.render('project', data)
+})
+
 app.listen(PORT, () => {
   console.log(`Server nodejs is up and running on port ${PORT}`);
 })
